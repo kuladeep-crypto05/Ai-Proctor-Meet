@@ -1,26 +1,26 @@
 # Ai-Proctor-Meet
 # AI Interview Live Monitoring Tool (Java)
 
-A desktop proctoring tool for live online interviews. It locks the candidate's
-window into a fullscreen session and watches for signals that the candidate
-has moved attention away from the interview — losing window focus, resizing
-into a split-screen layout, connecting a second monitor, the webcam losing
-sight of a face, or the feed going still for too long. Every event streams
-live to an interviewer dashboard, and the session auto-terminates once too
-many violations pile up.
+A desktop proctoring tool for live online interviews. It locks down the candidate's
+window to a fullscreen session, and takes action on indications that the candidate
+is no longer paying attention to their interview — loss of window focus,being resized
+into a split-screen layout, connection of a second monitor, the webcam not seeing
+a face, or the feed freezing for too long. All events are streamed
+live to an interviewer dashboard, and the session automatically-terminates when too
+many violations happen.
 
-## Important, honest limitation
+## Important,limitations
 
-No software — this one included — can literally detect "the candidate opened
-ChatGPT." What it *can* detect are behavioral proxy signals that correlate
-with a candidate looking away from the interview screen: focus loss, window
-resizing/snapping, extra monitors, and webcam presence/motion. The interviewer
-sees these flagged as **suspicious activity**, not a confirmed accusation —
-build your interview process around that distinction.
+No software,including this one,can detectly detect "the candidate opened
+ChatGPT". This tool can detect  behavioral proxy signals that are correlated
+with a candidate looking away from the interview screen: losing focus, window
+resizing/snapping,having extra monitors, and webcam presence/motion. The interviewer
+sees this as suspicious activity, not a direct accusation.
+Build your interview process around this distinction.
 
-Also worth knowing before deploying this: recording someone's webcam and
-monitoring their screen during an interview raises consent and privacy-law
-questions that vary by country/state. Get explicit candidate consent and
+Another consideration before deploying this: recording someone's webcam and
+monitoring their screen during an interview is a consent and privacy-law
+issue that vary by country/state. Get explicit candidate consent and
 check local requirements before using this in a real hiring process.
 
 ## Project structure
